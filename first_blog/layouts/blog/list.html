@@ -1,0 +1,36 @@
+{{ define "styles" }}
+    {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/posts.scss" "dest" "css/posts.css") }}
+{{ end }}
+
+{{ define "main" }}
+    
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2 2006" }}    
+
+<div class="blog-container">
+  <h1 class="list__title">Blog</h1>
+  <p class=list_subtitle>Articles about #datascience #analytics and so on. More posts available in french.</p> 
+  
+  <div class="post-list__container">
+    <ul class="post-list">
+      {{ range .Pages }}
+      <li class="post">
+        <div class="post__header">
+          <time class="post__date" datetime="{{ .Date }}"
+            >{{ .Date.Format $dateFormat }}</time>
+          <h2 class="post__title">
+            <a href="{{.RelPermalink}}">{{ .Title }}</a>
+          </h2>
+          <p>
+            In this post I will walk you through how I organize my dotfiles and mobilize my development environment with a one-command installation script.
+          </p>
+          {{ partial "tags.html" .}}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    
+  </div>
+  {{ partial "browse-by-tag.html" .}}
+</div>
+
+{{ end }}
