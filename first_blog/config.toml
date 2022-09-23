@@ -5,7 +5,7 @@ theme = "hugo-theme-codex"
 # Override these settings with your own
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My Hugo Site'
+title = 'Ant Frd©'
 copyright = "Ant Frd© 2022"
 
 # Add your Disqus shortname here.
@@ -22,7 +22,7 @@ copyright = "Ant Frd© 2022"
 
   # Links to your social accounts, comment/uncomment as needed. Icons will be displayed for those specified.
   #twitter = "https://twitter.com/<your handle>"
-  github = "https://github.com/<your handle>"
+  github = "https://github.com/antoinefradin"
   #email = "mailto:<your email>"
   # mastodon = "https://mastodon.social/@nickname"
   # facebook = "https://facebook.com/<your handle>"
@@ -30,7 +30,7 @@ copyright = "Ant Frd© 2022"
   # instagram = "https://instagram.com/<your handle>"
   linkedin = "https://www.linkedin.com/in/antoine-fradin/"
   # youtube = "https://www.youtube.com/channel/<your channel>"
-  medium = "https::/medium.com"
+  medium = "https://medium.com/"
   
   # Titles for your icons (shown as tooltips), and also their display order.
   # Currently, these icons are supported: 
